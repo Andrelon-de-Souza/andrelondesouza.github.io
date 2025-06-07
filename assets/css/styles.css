@@ -65,6 +65,12 @@ h1 {
     font-weight: 200;
 }
 
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 h1, h2, h3 {
     font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
@@ -145,14 +151,6 @@ p {
     display: none;
 }
 
-.h1 {
-    font-size: 4rem;
-}
-
-main {
-    padding: 6rem 6rem 4rem 6rem;
-}
-
 .main__content1 {
     display: flex;
     flex-direction: column;
@@ -173,7 +171,7 @@ main {
 }
 
 .btn {
-    width: 100%;
+    width: 80%;
     display: flex;
     gap: 0.625rem;
     align-items: center;
@@ -183,6 +181,8 @@ main {
     padding: 0.875rem 1.5rem;
     transition: ease-in-out .3s;
     cursor: pointer;
+    border: none;
+    color: var(--primary-color);
 }
 
 .btn:hover {
@@ -191,7 +191,7 @@ main {
 }
 
 .btn span, .btn i {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
 }
 
@@ -201,14 +201,17 @@ main {
 
 .btn--primary {
     border: 1px solid var(--primary-color);
-
+    margin: 0 auto;
 }
 
 main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2.5rem 1rem;
+}
+
+main, .projects {
+    padding: 3rem 1rem;
 }
 
 .main__content2 iframe {
@@ -235,7 +238,6 @@ main {
 .skills__list {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     gap: .5rem;
 }
 
@@ -253,6 +255,63 @@ main {
 
 .skills__logo {
     height: 2.4rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects__card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.card__title {
+    font-size: 1.5rem;
+}
+
+.card__description {
+    font-size: 1rem;
+    color: var(--title-color);
+}
+
+.card__list {
+    margin-left: 1rem;
+}
+
+.card__item {
+    list-style: disc;
+}
+
+.card__buttons {
+    display: flex;
+}
+
+.card__cover {
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.card__body .skills__item {
+    width: 4rem;
+    height: 4rem;
+}
+
+.card__body .skills__logo {
+    height: 2rem;
 }
 
 footer {
@@ -275,12 +334,37 @@ footer p {
         display: none;
     }
 
+    .projects__container .btn--primary {
+        width: 40%;
+    }
+
     .header__nav {
     display: flex;
 }
 
+.card__buttons .btn {
+    width: auto;
+}
+
 h1 {
     font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+}
+
+.projects__container h3 {
+    font-size: 2.5rem;
+}
+
+.main__content1 .btn {
+        width: auto;
+    }
+
+main, .projects {
+    padding: 2rem 6rem 3rem 6rem;
 }
 
 .main__content1 {
@@ -295,13 +379,32 @@ footer {
 }
 }
 
-@media (min-width: 1200px) {
-    main {
-        padding: 1rem 6rem 2rem;
+@media (min-width: 992px) {
+    .projects__card {
+        flex-direction: row;
     }
 
-    .main__content1 .btn {
-        width: auto;
+    .projects__card.card--reverse {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .card__cover {
+        width: 55%;
+    }
+    
+    .card__buttons .btn {
+    width: auto;
+}
+}
+
+@media (min-width: 1200px) {
+    main {
+        padding: 2rem 6rem 2rem;
+    }
+
+    h2 {
+        font-size: 4rem;
     }
 
     .skills {
@@ -327,6 +430,22 @@ footer {
 .skills__logo {
     height: 3rem;
 }
+
+.projects__card {
+    flex-direction: row;
+}
+
+.card__cover {
+    width: 50%;
+}
+
+.card__title {
+    font-size: 3.25rem;
+}
+
+.card__description, .card__item {
+    font-size: 1.25rem;
+}
 }
 
 @media(min-width: 1400px) {
@@ -335,7 +454,11 @@ footer {
     }
 
     main {
-        padding: 1rem 8rem 2rem;
+        padding: 2rem 8rem 2rem;
+    }
+
+    h2 {
+        font-size: 5rem;
     }
 
     h1 {

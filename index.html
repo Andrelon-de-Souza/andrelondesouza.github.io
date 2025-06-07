@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrelon de Souza | Portfólio</title>
-    <meta name="description" content="Portfólio do Desenvolvedor Andrelon de Souza para compartilhar seus projetos e habilidades na área de TI.">
+    <meta name="description"
+        content="Portfólio do Desenvolvedor Andrelon de Souza para compartilhar seus projetos e habilidades na área de TI.">
     <link rel="shortcut icon" href="assets/favicon/favicon-avatar-home.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
+
 <body>
 
     <header class="header">
@@ -18,21 +21,21 @@
         </div>
 
         <nav class="header__nav">
-        <ul class="menu menu--principal">
-            <li class="menu__item"> 
-                <a class="menu__link active" href="#home"><span class="menu__text">Home</span></a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#projetos"><span class="menu__text">Projetos</span></a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#sobre"><span class="menu__text">Sobre</span></a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#contato"><span class="menu__text">Contato</span></a>
-            </li>
-        </ul>
-    </nav>
+            <ul class="menu menu--principal">
+                <li class="menu__item">
+                    <a class="menu__link active" href="#home"><span class="menu__text">Home</span></a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#projetos"><span class="menu__text">Projetos</span></a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#sobre"><span class="menu__text">Sobre</span></a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#contato"><span class="menu__text">Contato</span></a>
+                </li>
+            </ul>
+        </nav>
 
         <div class="header__tog">
             <i id="toggleTheme" class="bi bi-sun"></i>
@@ -43,7 +46,7 @@
         <ul class="menu menu--mobile">
             <li class="menu__item">
                 <a class="menu__link active" href="#home"><i class="menu__icon bi bi-house-door"></i>
-                <span class="menu__text">Home</span></a>
+                    <span class="menu__text">Home</span></a>
             </li>
             <li class="menu__item">
                 <a class="menu__link" href="#projetos"><i class="menu__icon bi bi-window-stack"></i>
@@ -76,14 +79,19 @@
                 </a>
             </ul>
 
-            <button class="btn btn--primary">
-                <span>Ver Projetos</span>
-                <i class="bi bi-arrow-down-right"></i>
-            </button>
+            <a href="#projetos">
+                <button class="btn btn--primary">
+                    <span>Ver Projetos</span>
+                    <i class="bi bi-arrow-down-right"></i>
+                </button>
+            </a>
         </div>
 
         <div class="main__content2">
-            <iframe src="https://www.youtube.com/embed/HXKz2-Sohfo?si=aiGHU3Cjba9YSLvv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/HXKz2-Sohfo?si=aiGHU3Cjba9YSLvv" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
     </main>
@@ -109,11 +117,152 @@
         </ul>
     </section>
 
+    <section id="projetos" class="projects">
+        <h2>Projetos</h2>
+
+        <div class="projects__container">
+            <div class="projects__card">
+                <img class="card__cover" src="assets/images/projetos/landing-page-trilha-css.png"
+                    alt="Landing Page da Trilha de CSS">
+
+                <div class="card__body">
+                    <h3 class="card__title">Landing Page - Trilha de CSS</h3>
+                    <p class="card__description">Venda do Curso de CSS</p>
+                    <ul class="card__list">
+                        <li class="card__item">Seção de inscrição</li>
+                        <li class="card__item">Descrição do curso</li>
+                        <li class="card__item">O que irá aprender no curso</li>
+                    </ul>
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/habilidades/js.svg" alt="Logo Javascript">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/habilidades/html.svg" alt="Logo HTML">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/habilidades/css.svg" alt="Logo CSS">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/habilidades/node.js.svg" alt="Logo Node.js">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/habilidades/git.svg" alt="Logo Git">
+                        </li>
+                    </ul>
+
+                    <div class="card__buttons">
+                        <button class="btn btn--primary">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                        <button class="btn">
+                            <span>Repositório</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__card card--reverse">
+                <img class="card__cover" src="assets/images/projetos/landing-page-trilha-css.png"
+                    alt="Landing Page da Trilha de CSS">
+
+                <div class="card__body">
+                    <h3 class="card__title">Landing Page - Trilha de CSS</h3>
+                    <p class="card__description">Venda do Curso de CSS</p>
+                    <ul class="card__list">
+                        <li class="card__item">Seção de inscrição</li>
+                        <li class="card__item">Descrição do curso</li>
+                        <li class="card__item">O que irá aprender no curso</li>
+                    </ul>
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/habilidades/js.svg" alt="Logo Javascript">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/habilidades/html.svg" alt="Logo HTML">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/habilidades/css.svg" alt="Logo CSS">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/habilidades/node.js.svg" alt="Logo Node.js">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/habilidades/git.svg" alt="Logo Git">
+                        </li>
+                    </ul>
+
+                    <div class="card__buttons">
+                        <button class="btn btn--primary">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                        <button class="btn">
+                            <span>Repositório</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects__card">
+                <img class="card__cover" src="assets/images/projetos/landing-page-trilha-css.png"
+                    alt="Landing Page da Trilha de CSS">
+
+                <div class="card__body">
+                    <h3 class="card__title">Landing Page - Trilha de CSS</h3>
+                    <p class="card__description">Venda do Curso de CSS</p>
+                    <ul class="card__list">
+                        <li  class="card__item">Seção de inscrição</li>
+                        <li  class="card__item">Descrição do curso</li>
+                        <li class="card__item">O que irá aprender no curso</li>
+                    </ul>
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/habilidades/js.svg" alt="Logo Javascript">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/habilidades/html.svg" alt="Logo HTML">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/habilidades/css.svg" alt="Logo CSS">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/habilidades/node.js.svg" alt="Logo Node.js">
+                        </li>
+                        <li class="skills__item">
+                            <img class="skills__logo" src="assets/images/habilidades/git.svg" alt="Logo Git">
+                        </li>
+                    </ul>
+
+                    <div class="card__buttons">
+                        <button class="btn btn--primary">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                        <button class="btn">
+                            <span>Repositório</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <a href="">
+                <button class="btn btn--primary">
+                    <span>Ver Todos os Projetos</span>
+                    <i class="bi bi-arrow-up-right"></i>
+                </button>
+            </a>
+        </div>
+    </section>
+
     <footer>
-        <p>2025. Todos os direitos Reservados. Andrelon de Souza. Desenvolvido por <a href="https://github.com/Andrelon-de-Souza">AS</a></p>
+        <p>2025. Todos os direitos Reservados. Andrelon de Souza. Desenvolvido por <a
+                href="https://github.com/Andrelon-de-Souza">AS</a></p>
     </footer>
 
     <script src="assets/scripts/script.js"></script>
-    
+
 </body>
+
 </html>
